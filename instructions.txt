@@ -1,0 +1,16 @@
+- mongo's IDs are  wroten with _id 
+  exmple: 
+  user._id
+  produit._id
+
+:id in the url <-- means that's the id you need to pass in the front to back 
+ exmmple 
+   router.get(user/:id) <--- pass the user's id  --> user/4664656
+
+:owner <---- pass to the id of the owner (product's owner  or demande's owner)
+:cat  <--- pass the name of the categorie (phone / PC/ TV ....)
+:nom <-- pass the product name (samsung s9/ iphone/ lg 7)
+
+deleting an user will automatically delete all the products and the demandes that the user have but not the feedbacks
+
+there's no upadate for a feedback or a categorie you just simply delete and add new one 
